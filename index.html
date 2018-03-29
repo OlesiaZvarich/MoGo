@@ -1,0 +1,608 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <link rel="stylesheet"  href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="node_modules/bootstrap/js/collapse.js"></script>
+    <link rel="stylesheet" href="build/styles.min.css">
+    <link href="node_modules/font-awesome/css/font-awesome.min.css" rel='stylesheet' type='text/css'>
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>MoGo</title>
+</head>
+<body>
+<header class="main-page ">
+    <div class="wrapper">
+        <div class="header">
+            <div class="logo">MoGo</div>
+            <div id="hamburger-btn" onclick="toggleSidebar(this)">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu " id="menu-sidebar">
+                <ul>
+                    <li><a href="#about" class="menu-link">About</a></li>
+                    <li><a href="#service" class="menu-link">Service</a></li>
+                    <li><a href="#work" class="menu-link">Work</a></li>
+                    <li><a href="#blog" class="menu-link">Blog</a></li>
+                    <li><a href="#contact" class="menu-link">Contact</a></li>
+                    <li>
+                        <a href="#" class="shopping-cart">
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="search">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="main-text opacity" id="main-text">
+            <h1>Creative Template</h1>
+            <span>Welcome<br> to MoGo</span>
+            <div class="border"></div>
+            <div class="btn-more"><a href="#about">Learn more</a></div>
+        </div>
+        <div class="items opacity" id="items">
+            <div class="item"><span>01</span>intro</div>
+            <div class="item"><span>02</span>work</div>
+            <div class="item"><span>03</span>about</div>
+            <div class="item"><span>04</span>contacts</div>
+        </div>
+    </div>
+</header>
+<main>
+    <section class="about">
+        <a id="about"></a>
+        <div class="wrapper">
+            <div class="header-general wow fadeInUp">
+                <span>What we do</span>
+                <h3>Story about us</h3>
+                <div class="header-general-line"></div>
+            </div>
+            <div class="text-general wow fadeInUp">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+            <div class="photo-about">
+                <div class="photo-item-1 wow zoomIn"><span class="icon-users"><i class="fa fa-users" aria-hidden="true"></i><br>super team</span></div>
+                <div class="photo-item-2 wow zoomIn"><span class="icon-users"><i class="fa fa-users" aria-hidden="true"></i><br>super team</span></div>
+                <div class="photo-item-3 wow zoomIn"><span class="icon-users"><i class="fa fa-users" aria-hidden="true"></i><br>super team</span></div>
+            </div>
+        </div>
+        <div class="statistic-about">
+            <div class="wrapper">
+                <ul>
+                    <li class="wow fadeInLeft" data-wow-delay="0s"><span>42</span><br>Web Design Projects</li>
+                    <li class="wow fadeInLeft" data-wow-delay="0.2s"><span>123</span><br>happy client</li>
+                    <li class="wow fadeInLeft" data-wow-delay="0.3s"><span>15</span><br>award winner</li>
+                    <li class="wow fadeInLeft" data-wow-delay="0.4s"><span>99</span><br>cup of coffee</li>
+                    <li class="wow fadeInLeft" data-wow-delay="0.5s"><span>24</span><br>members</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="services">
+        <a id="service"></a>
+        <div class="wrapper">
+            <div class="header-general wow fadeInUp">
+                <span>We work with</span>
+                <h3>Amazing Services</h3>
+                <div class="header-general-line"></div>
+            </div>
+            <div class="services-part-1">
+                <div class="items wow zoomInDown">
+                    <img src="assets/img/icon-alarm.png" alt="">
+                    <div class="service-text">
+                        <h2>Photography</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                        </p>
+                    </div>
+                </div>
+                <div class="items wow zoomInDown ">
+                    <img src="assets/img/icon-line-graph.png" alt="">
+                    <div class="service-text">
+                        <h2>Web Design</h2>
+                        <p>
+                            Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                        </p>
+                    </div>
+                </div>
+                <div class="items wow zoomInDown">
+                    <img src="assets/img/icon-computer.png" alt="">
+                    <div class="service-text">
+                        <h2>Creativity</h2>
+                        <p>
+                            Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="services-part-2">
+                <div class="items wow zoomInDown">
+                    <img src="assets/img/icon-book-2.png" alt="">
+                    <div class="service-text">
+                        <h2>seo</h2>
+                        <p>
+                            Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+                        </p>
+                    </div>
+                </div>
+                <div class="items wow zoomInDown">
+                    <img src="assets/img/icon-home.png" alt="">
+                    <div class="service-text">
+                        <h2>Css/Html</h2>
+                        <p>
+                            Lorem dolor sit amet, consectetur adipiscing elit, sed do tempor.
+                        </p>
+                    </div>
+                </div>
+                <div class="items wow zoomInDown">
+                    <img src="assets/img/icon-image.png" alt="">
+                    <div class="service-text">
+                        <h2>digital</h2>
+                        <p>
+                            Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="design">
+        <div class="header-general wow fadeInUp">
+            <span>For all devices</span>
+            <h3>Unique design</h3>
+            <div class="header-general-line"></div>
+        </div>
+        <img class="device-1 wow fadeInLeft" src="assets/img/display-bg-768x1024.png" alt="">
+        <img class="device-2 wow fadeInRight" src="assets/img/white.png" alt="">
+    </section>
+    <section class="what-we-do">
+        <div class="wrapper">
+            <div class="header-general wow fadeInUp">
+                <span>Service</span>
+                <h3>what we do</h3>
+                <div class="header-general-line"></div>
+            </div>
+            <div class="text-general wow fadeInUp">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+            <div class="what-we-do-detail">
+                <img class="wow fadeInLeft" src="assets/img/img-service.png" alt="">
+                <div class="detail-inf wow fadeInRight">
+                        <ul class="accordion">
+                            <li>
+                                <h4 class="toggle">
+                                    <i class="fa fa-picture-o" aria-hidden="true"></i>
+                                    Photography
+                                </h4>
+                                <div class="inner active panelBody">
+                                    <p >
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <h4 class="toggle">
+                                    <i class="fa fa-sliders" aria-hidden="true"></i>
+                                    creativity
+                                </h4>
+                                <div class="inner panelBody">
+                                    <p >
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <h4 class="toggle" >
+                                    <i class="fa fa-bullseye" aria-hidden="true"></i>
+                                    web design
+                                </h4>
+                                <div class="inner panelBody">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                </div>
+            </div>
+            <div class="quote-general wow fadeInLeft">
+                <div class="quote-detail">
+                    <img src="assets/img/arrow-left.png" alt="">
+                    <img class="icon-speech" src="assets/img/icon-speech.png" alt="">
+                    <div class="quote-text">
+                        <p>
+                            “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation.”
+                        </p>
+                        <span>Jon Doe</span>
+                    </div>
+                    <img src="assets/img/arrow-right.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="team">
+        <div class="wrapper">
+            <div class="header-general wow fadeInUp">
+                <span>Who we are</span>
+                <h3>Meet our team</h3>
+                <div class="header-general-line"></div>
+            </div>
+            <div class="text-general wow fadeInUp">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+            <div class="photo-team">
+                <div class="photo-1 wow zoomIn">
+                    <div class="social-icons">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="photo-2 wow zoomIn">
+                    <div class="social-icons">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="photo-3 wow zoomIn">
+                    <div class="social-icons">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="team-label">
+            <div class="wrapper">
+                <img class="wow zoomIn" src="assets/img/team-label.png" alt="">
+            </div>
+        </div>
+
+    </section>
+    <section class="work">
+        <a id="work"></a>
+        <div class="wrapper">
+            <div class="header-general wow fadeInUp">
+                <span>What we do</span>
+                <h3>some of our work</h3>
+                <div class="header-general-line"></div>
+            </div>
+            <div class="text-general wow fadeInUp">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+        </div>
+        <div class="portfolio-wrapper">
+            <div class="portfolio">
+                <div class="item-1 wow zoomIn" >
+                    <div class="detail-inf-portfolio">
+                        <i class="fa fa-picture-o" aria-hidden="true"></i>
+                        <h5>creatively designed</h5>
+                        <span>Lorem ipsum dolor sit</span>
+                    </div>
+                </div>
+                <div class="item-2 wow zoomIn">
+                    <div class="detail-inf-portfolio">
+                        <i class="fa fa-picture-o" aria-hidden="true"></i>
+                        <h5>creatively designed</h5>
+                        <span>Lorem ipsum dolor sit</span>
+                    </div>
+                </div>
+                <div class="item-3 wow zoomIn">
+                    <div class="detail-inf-portfolio">
+                        <i class="fa fa-picture-o" aria-hidden="true"></i>
+                        <h5>creatively designed</h5>
+                        <span>Lorem ipsum dolor sit</span>
+                    </div>
+                </div>
+                <div class="item-4 wow zoomIn">
+                    <div class="detail-inf-portfolio">
+                        <i class="fa fa-picture-o" aria-hidden="true"></i>
+                        <h5>creatively designed</h5>
+                        <span>Lorem ipsum dolor sit</span>
+                    </div>
+                </div>
+                <div class="item-6 wow zoomIn">
+                    <div class="detail-inf-portfolio">
+                        <i class="fa fa-picture-o" aria-hidden="true"></i>
+                        <h5>creatively designed</h5>
+                        <span>Lorem ipsum dolor sit</span>
+                    </div>
+                </div>
+                <div class="item-7 wow zoomIn">
+                    <div class="detail-inf-portfolio">
+                        <i class="fa fa-picture-o" aria-hidden="true"></i>
+                        <h5>creatively designed</h5>
+                        <span>Lorem ipsum dolor sit</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="quote-general wow fadeInLeft">
+                <div class="quote-detail">
+                    <img src="assets/img/arrow-left.png" alt="">
+                    <img class="icon-man" src="assets/img/quote.png" alt="">
+                    <div class="quote-text">
+                        <p>
+                            “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation.”
+                        </p>
+                        <span>Joshua Earle</span>
+                    </div>
+                    <img src="assets/img/arrow-right.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="clients">
+        <div class="wrapper">
+            <div class="header-general wow fadeInUp">
+                <span>Happy Clients</span>
+                <h3>What people say</h3>
+                <div class="header-general-line"></div>
+            </div>
+            <div class="reviews">
+                <div class="review wow fadeInLeft">
+                    <img src="assets/img/man-1.png" alt="">
+                    <div class="review-detail">
+                        <h5>Matthew Dix</h5>
+                        <span>Graphic Design</span>
+                        <div class="line"></div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                        </p>
+                    </div>
+                </div>
+                <div class="review wow fadeInLeft">
+                    <img src="assets/img/man-2.png" alt="">
+                    <div class="review-detail">
+                        <h5>Nick Karvounis</h5>
+                        <span>Graphic Design</span>
+                        <div class="line"></div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                        </p>
+                    </div>
+                </div>
+                <div class="review wow fadeInRight">
+                    <img src="assets/img/man-3.png" alt="">
+                    <div class="review-detail">
+                        <h5>Jaelynn Castillo </h5>
+                        <span>Graphic Design</span>
+                        <div class="line"></div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                        </p>
+                    </div>
+                </div>
+                <div class="review wow fadeInRight">
+                    <img src="assets/img/man-4.png" alt="">
+                    <div class="review-detail">
+                        <h5>Mike Petrucci</h5>
+                        <span>Graphic Design</span>
+                        <div class="line"></div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="blog">
+        <a id="blog"></a>
+        <div class="wrapper">
+            <div class="header-general wow fadeInUp">
+                <span>Our stories</span>
+                <h3>Latest blog</h3>
+                <div class="header-general-line"></div>
+            </div>
+            <div class="blog-inf">
+                <div class="blog-item wow fadeInLeft"  data-wow-delay="0.3s">
+                    <a href="#"><img src="/assets/img/stories-1.png" alt=""></a>
+                    <div class="date wow fadeInLeft" data-wow-delay="0.9s"><span>15</span>Jan</div>
+                    <h5>Lorem ipsum dolor sit amet</h5>
+                    <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="statistics-blog">
+                        <span class="view"><i class="fa fa-eye" aria-hidden="true"></i> 542</span>
+                        <span class="msg"><i class="fa fa-commenting" aria-hidden="true"></i> 17</span>
+                    </div>
+                </div>
+                <div class="blog-item wow fadeInLeft" data-wow-delay="0.2s">
+                    <a href="#"><img src="/assets/img/stories-2.png" alt=""></a>
+                    <div class="date wow fadeInLeft" data-wow-delay="0.8s"><span>14</span>Jan</div>
+                    <h5>sed do eiusmod tempor</h5>
+                    <p>Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="statistics-blog">
+                        <span class="view"><i class="fa fa-eye" aria-hidden="true"></i> 992</span>
+                        <span class="msg"><i class="fa fa-commenting" aria-hidden="true"></i> 42</span>
+                    </div>
+                </div>
+                <div class="blog-item wow fadeInLeft" data-wow-delay="0s">
+                    <a href="#"><img src="/assets/img/stories-3.png" alt=""></a>
+                    <div class="date wow fadeInLeft" data-wow-delay="0.7s"><span>12</span>Jan</div>
+                    <h5>incididunt ut labore et dolore</h5>
+                    <p>Elit, sed do eiusmod tempor incididunt ut labore et dolore magn</p>
+                    <div class="statistics-blog">
+                        <span class="view"><i class="fa fa-eye" aria-hidden="true"></i> 1560</span>
+                        <span class="msg"><i class="fa fa-commenting" aria-hidden="true"></i> 98</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="map" class="map"></section>
+</main>
+<footer class="footer">
+    <div class="wrapper">
+        <div class="content-footer">
+            <a id="contact"></a>
+            <div class="mogo-footer wow fadeInUp">
+                <h1>MoGo</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+                <div class="followers"><span>15k</span> followers</div>
+                <div class="footer-line"></div>
+                <div class="follow-us">
+                    <span>Follow Us:</span>
+                    <div class="footer-social-icons">
+                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-google-plus-official" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-tumblr" aria-hidden="true"></i></a>
+                    </div>
+
+                </div>
+                <div class="subscribe">
+                    <input type="text" placeholder="Your Email...">
+                    <button>Subscribe</button>
+                </div>
+            </div>
+            <div class="blogs-footer wow fadeInUp" >
+                <h5>blogs</h5>
+                <div class="blogs-footer-items">
+                    <div class="blogs-footer-item">
+                        <a href=""><img src="assets/img/blogs-1.png" alt=""></a>
+                        <a href="#">
+                            <p>
+                                Lorem ipsum dolor sit amet,  consectetur adipiscing<br>
+                                <span>Jan 9, 2016</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="blogs-footer-item">
+                        <a href="#"><img src="assets/img/blogs-2.png" alt=""></a>
+                        <a href="#">
+                            <p>
+                                Consectetur adipiscing elit,  sed do eiusmod tempor<br>
+                                <span>Jan 9, 2016</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="blogs-footer-item">
+                        <a href="#"><img src="assets/img/blogs-3.png" alt=""></a>
+                        <a href="#">
+                            <p>
+                                sed do eiusmod tempor  incididunt ut labore<br>
+                                <span>Jan 9, 2016</span>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="instagram-footer wow fadeInUp" >
+                <h5>instagram</h5>
+                <div class="instagram-footer-img">
+                    <a href="#"><img src="assets/img/insta-1.png" alt=""></a>
+                    <a href="#"><img src="assets/img/insta-2.png" alt=""></a>
+                    <a href="#"><img src="assets/img/insta-3.png" alt=""></a>
+                    <a href="#"><img src="assets/img/insta-4.png" alt=""></a>
+                    <a href="#"><img src="assets/img/insta-5.png" alt=""></a>
+                    <a href="#"><img src="assets/img/insta-6.png" alt=""></a>
+                    <a href="#"><img src="assets/img/insta-7.png" alt=""></a>
+                    <a href="#"><img src="assets/img/insta-8.png" alt=""></a>
+                    <a href="#"><img src="assets/img/insta-9.png" alt=""></a>
+                </div>
+                <div class="more-photo"><a href="">View more photos</a></div>
+            </div>
+        </div>
+        <div class="footer-line wow fadeInUp" ></div>
+        <div class="copyright-footer wow fadeInUp">
+           &copy; 2016 MoGo free PSD template by <a href="#"><span>Laaqiq</span></a>
+       </div>
+    </div>
+</footer>
+</body>
+<script>
+    $(document).ready(function(){
+        $("#menu-sidebar,.btn-more").on("click","a", function (event) {
+            event.preventDefault();
+            let id  = $(this).attr('href'),
+                top = $(id).offset().top;
+            $('body,html').animate({scrollTop: top}, 2500);
+        });
+    });
+</script>
+
+
+<script>
+    function initMap() {
+        let uluru = {lat: 46.460123, lng: 30.5717052};
+        let map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 6,
+            center: uluru
+        });
+        let marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+        });
+    }
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgPpS6LFW6lElK86gHydJ5WleoGmgAnqQ&callback=initMap">
+</script>
+<script src="build/scripts.min.js"></script>
+</html>

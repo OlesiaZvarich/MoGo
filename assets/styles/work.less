@@ -1,0 +1,180 @@
+@import "fonts";
+@import "var";
+
+
+.work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  .wrapper {
+    height: 400px;
+
+  }
+
+  .portfolio-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: @screen-lg-area;
+
+
+
+  .portfolio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+      .item-1, .item-2, .item-3, .item-4,
+      .item-6, .item-7 {
+        cursor: pointer;
+        width: 480px;
+        height: 390px;
+
+      }
+      .item-1 {
+        background: url("/assets/img/work-1.png") no-repeat;
+        background-size: contain;
+      }
+      .item-2 {
+        background: url("/assets/img/work-2.png") no-repeat;
+        background-size: contain;
+      }
+      .item-3 {
+        background: url("/assets/img/work-3.png") no-repeat;
+        background-size: contain;
+      }
+      .item-4 {
+        background: url("/assets/img/work-4.png") no-repeat;
+        background-size: contain;
+      }
+
+      .item-6 {
+        background: url("/assets/img/work-6.png") no-repeat;
+        background-size: contain;
+      }
+
+      .item-7 {
+        background: url("/assets/img/work-7.png") no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+
+  .quote-general {
+    background-color: inherit;
+  }
+
+}
+
+.item-1, .item-2, .item-3, .item-4, .item-5,
+.item-6, .item-7 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+
+  .detail-inf-portfolio {
+    display: none;
+  }
+
+  &:hover {
+
+    .detail-inf-portfolio {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
+      width: 200px;
+      height: 100px;
+      z-index: 1;
+      .fa-picture-o {
+       font-size: 30px;
+        color: #ffffff;
+      }
+      h5 {
+        color: #ffffff;
+        font-family: Montserrat;
+        font-size: 14px;
+        text-transform: uppercase;
+      }
+      span {
+        color: #ffffff;
+        font-family: "Roboto - Light Italic";
+        font-size: 15px;
+      }
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.8;
+      background-image: linear-gradient(90deg, rgb(252, 227, 138) 0%, rgb(243, 129, 129) 100%);
+
+    }
+
+  }
+}
+
+@media (max-width : @screen-m) {
+
+  .work {
+    .portfolio-wrapper {
+      width:@screen-m-area;
+      .portfolio {
+
+        .item-1, .item-2, .item-3, .item-4,
+        .item-6, .item-7 {
+          width: 320px;
+          height: 260px;
+        }
+
+      }
+    }
+  }
+  .quote-detail {
+    .icon-man {
+      width: 120px;
+      height:120px;
+    }
+  }
+}
+
+
+@media (max-width : @screen-sm) {
+
+  .work {
+    .wrapper {
+      height: 300px;
+    }
+    .portfolio-wrapper {
+
+      width:@screen-sm-area;
+    .portfolio {
+      flex-wrap: wrap;
+
+      .item-1, .item-2, .item-3, .item-4,
+      .item-6, .item-7 {
+        width: 320px;
+        height: 260px;
+
+      }
+
+    }
+  }
+    }
+  }
+  .quote-detail {
+    .icon-man {
+      width: 100px;
+      height:100px;
+    }
+  }
+

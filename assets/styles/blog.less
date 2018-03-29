@@ -1,0 +1,153 @@
+@import "fonts";
+@import "var";
+
+
+.blog {
+
+  .wrapper {
+    height:700px;
+  }
+
+
+
+    .blog-inf {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+      width: 100%;
+
+      .blog-item {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        position: relative;
+        width: 382px;
+        height:372px;
+
+        h5 {
+          color: #333333;
+          font-family: Montserrat;
+          font-size: 14px;
+          text-transform: uppercase;
+        }
+        p {
+          color: #999999;
+          font-family: Roboto;
+          font-size: 15px;
+          line-height: 24px;
+          width: 346px;
+        }
+      }
+  }
+}
+
+
+.date {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 62px;
+  height: 72px;
+  bottom:38%;left: -3%;
+  background-color: @main-bg-color;
+  color: #ffffff;
+  font-family: "Roboto - Light Italic";
+  font-size: 15px;
+  align-items: center;
+
+  span {
+    display: block;
+    padding-top: 5px;
+    font-family: 'Montserrat bold';
+    font-size: 30px;
+    text-transform: uppercase;
+  }
+
+}
+
+.statistics-blog {
+  font-family: "Roboto-Light-Italic";
+  color: #999999;
+  font-size: 15px;
+
+  .view{
+    padding-right:5px;
+    i {
+      color: @main-bg-color;
+    }
+  }
+  .msg {
+    i {
+      color: @main-bg-color;
+    }
+  }
+
+
+}
+
+@media (max-width : @screen-m) {
+  .blog {
+
+    .wrapper {
+
+      height:1000px;
+    }
+
+
+
+    .blog-inf {
+      flex-wrap: wrap;
+      .blog-item {
+
+        width: 382px;
+        height:372px;
+
+
+            &:last-child {
+              padding-left: 200px;
+              margin-top: 30px;
+              .date {
+               left: 49%;
+
+              }
+            }
+
+        h5 {
+          font-size: 14px;
+        }
+        p {
+          font-size: 15px;
+          width: 346px;
+        }
+      }
+    }
+  }
+
+
+}
+
+@media (max-width : @screen-sm) {
+  .blog {
+    .wrapper {
+      height:1500px;
+    }
+    .blog-inf {
+
+      justify-content: space-around;
+      .blog-item {
+
+        margin-bottom: 50px;
+
+
+        &:last-child {
+          padding-left: 0px;
+          .date {
+            left: -3%;
+          }
+        }
+      }
+    }
+  }
+}
+
